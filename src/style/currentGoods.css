@@ -1,0 +1,30 @@
+.menuContainer{
+    grid-column: 1/4;
+    width: 50vw;
+    height: 85vh;
+    background-color: rgb(253, 243, 215);
+    justify-self: center;
+    padding:3rem;
+    display: flex;
+    flex-direction: column;
+}
+    .title{
+        align-self: center;
+    }
+    .bakeryMenu{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        min-height: 70vh;
+    }
+        .bakeryItem{
+            display: flex;
+            justify-content: space-between;
+        }
+        #product{
+
+        }
+        #price{
+            margin-left: 10rem;
+            align-self: start;
+        }

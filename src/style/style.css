@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf') format('opentype');
+    font-weight: bolder;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Sigmar';
+    src: url('../fonts/Sigmar/Sigmar-Regular.ttf') format('opentype');
+    font-weight: bolder;
+    font-style: normal;
+  }
+:root, body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: grid;
+    grid-template-rows: repeat(2, min-content);
+    min-width: 100vw;
+    height: 100vh;
+    font-family: "Roboto";
+    font-size: 1.5rem;
+    gap:10px;
+    background-color: rgba(68, 12, 114, 0.308);
+}
+
+
+    .header{
+        grid-row: 1/2;
+        grid-column: 1/3;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        height: fit-content;
+    
+        /* height: 12vh; */
+
+    }
+        .homeIconContainer{
+            grid-row: 1/2;
+            grid-column: 1/2;
+            width: 20vw;
+            height: 15vh;
+            margin:2rem;
+            margin-bottom: 0;
+        }
+        .homeBtn{
+            
+            height: 12vh;
+            width: auto;
+            border-radius: 15px;
+            margin-right: 1vh;
+            margin-bottom: 1vw;
+            
+        }
+        .homeBtn:hover{
+            animation: expand 0.3s ease-in;
+            height: 13.5vh;
+        }
+        .homeBtn:not(:hover){
+            animation: contract 0.3s ease-in;
+
+        }
+   
+        .company{
+            grid-row: 1/2;
+            grid-column: 2/3;
+            align-self: center;
+            font-family: 'Roboto';
+            font-weight: bolder;
+            color: rgb(255, 255, 255);
+            font-size: 3.5rem;
+        }
+        .pages{
+            align-self: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            /* padding: .5rem 0;
+            margin-right: 1vw; */
+        }
+            .link{
+                text-decoration: none;
+                color: white;
+                font-size: 1.5rem;
+            }
+            .link:hover{
+                text-decoration: underline;
+            }
+            .icon{
+                height: 4vh;
+                align-self: center;
+            }
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    50%{
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+    }
+    
+
+}    
+
+@keyframes expand {
+    0% {
+        height: 12vh;
+    }
+    50%{
+        height: 12.75vh;
+    }
+    100% {
+        height: 13.5vh;
+    }
+    
+}
+@keyframes contract{
+    0% {
+        height: 13.5vh;
+    }
+    50%{
+        height: 12.75vh;
+    }
+    100% {
+        height: 12vh;
+
+    }
+}

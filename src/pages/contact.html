@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/contact.css">
+    <title>PJ's Pies and More</title>
+</head>
+<body>
+    <div class="header">
+        <div class="homeIconContainer">
+            <a href="/home.html"><img class="homeBtn" src="/src/img/icons/whisk.jpeg" alt="home icon"></a>
+    
+        </div>
+        <h1 class="company">PJ's Pies and More</h1>
+        <div class="pages">
+            <a class='link' href="/src/pages/currentGoods.html">Current Goods</a>
+            <a class='link' href="/src/pages/contact.html">Contact Us</a>
+    
+        </div>
+    </div>
+    <div class="contentWrap">
+        <h1 class="title">Contact Us</h1>
+        <form class="form" action="post">
+            <label class="name" for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="John Doe">
+            
+            <label class="phone" for="phone">Phone Number</label>
+            <input id='phone' name='phone' type="tel" placeholder="509.123.4567">
+
+            <label class="email" for="email">Email</label>
+            <input id="email" type="email" name="email" placeholder="someone@somewhere.com">
+
+            <textarea name="message" id="message" placeholder="Your message here:"></textarea>
+
+            <button class="submit" onclick=event.preventDefault()>Submit</button> <!-- currently a dummy form.. no submit -->
+        </form>
+    </div>
+    <img class="pie" src="../img/pie.jpg" alt="Pie with powdered sugar">
+
+</body>
+<script>
+   
+</script>
+</html>
