@@ -5,7 +5,7 @@
     font-style: normal;
   }
 .header{
-    background-color: rgba(68, 12, 114, 0.308);
+    background-color: rgba(68, 12, 114, 0.473);
 }
 .contentWrap{
     grid-row: 2/3;
@@ -17,7 +17,7 @@
     font-family: 'Roboto';
     min-height: 70vh;
     justify-self: center;
-    margin-right: -4vw;
+    margin-right: 4vw;
     margin-top: 5vh;
 
     display: grid;
@@ -25,7 +25,6 @@
     grid-template-rows: min-content auto;
 
     animation: fadeIn 0.5s ease-in;
-    /* min-width: 20vw; */
 }
     .title{
         grid-row: 1/2;
@@ -91,7 +90,6 @@
         }
         
 .pie{
-    /* height: 85vh; */
     position:fixed;
     bottom:0;
     right:0;
@@ -99,15 +97,8 @@
     width: 100vw;
     height: auto;
     min-height: 100vh;
-    /* max-height: 80vh; */
-    margin-right: 10px;
     animation: fadeIn 0.5s ease-in;
-    /* display:none; */
 }
-    
-
-
-
   .icon:hover{
     background: radial-gradient(circle, white, rgba(255, 255, 255, 0.301));
     border-radius: 15px;
