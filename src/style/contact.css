@@ -37,9 +37,7 @@
         grid-column: 1/2;
         display: grid;
         grid-template-columns: repeat(2, auto);
-        font-size: 1.2rem;
-        /* min-width: 45vw; */
-        
+        font-size: 1.2rem;        
     }
         label{
             grid-column: 1/2;
@@ -98,12 +96,4 @@
     height: auto;
     min-height: 100vh;
     animation: fadeIn 0.5s ease-in;
-}
-  .icon:hover{
-    background: radial-gradient(circle, white, rgba(255, 255, 255, 0.301));
-    border-radius: 15px;
-    background-size: 0% 0%;
-    background-repeat: no-repeat;
-    background-position: center;
-    
 }

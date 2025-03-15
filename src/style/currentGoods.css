@@ -1,15 +1,27 @@
+.header{
+    background-color: rgba(68, 12, 114, 0.438);
+}
+body{
+    background-color: white;
+}
 .menuContainer{
     grid-column: 1/4;
     width: 50vw;
     height: 85vh;
-    background-color: rgb(253, 243, 215);
-    justify-self: center;
+    justify-self: end;
+    margin-right: 10vw;
     padding:3rem;
     display: flex;
     flex-direction: column;
+
+    font-family: 'RobItalic';
+
+    animation: fadeIn 0.75s ease-in;
+    border-radius: 25px;
 }
     .title{
         align-self: center;
+        font-family: 'Roboto';
     }
     .bakeryMenu{
         display: flex;
@@ -20,6 +32,7 @@
         .bakeryItem{
             display: flex;
             justify-content: space-between;
+            border-bottom: 1px dashed black;
         }
         #product{
 

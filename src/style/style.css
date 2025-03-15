@@ -11,6 +11,11 @@
     font-style: normal;
   }
 
+  @font-face {
+    font-family: "RobItalic";
+    src: url('../fonts//Roboto/Roboto_Condensed-ThinItalic.ttf');
+  }
+
 /*ALL KEYFRAME ANIMATIONS AT BOTTOM OF DOCUMENT  */
 
 :root, body{
@@ -26,7 +31,7 @@ body{
     font-family: "Roboto";
     font-size: 1.5rem;
     gap:10px;
-    background-color: rgba(68, 12, 114, 0.308);
+    background-color: rgba(68, 12, 114, 0.438);
 }
 
 
@@ -46,22 +51,17 @@ body{
             margin:2rem;
             margin-bottom: 0;
         }
-        .homeBtn{
-            
+        .homeBtn {
             height: 12vh;
             width: auto;
             border-radius: 15px;
             margin-right: 1vh;
             margin-bottom: 1vw;
-            
+            transition: height 0.3s ease-in;
         }
-        .homeBtn:hover{
-            animation: expand 0.3s ease-in;
+        
+        .homeBtn:hover {
             height: 13.5vh;
-        }
-        .homeBtn:not(:hover){
-            animation: contract 0.3s ease-in;
-
         }
    
         .company{
@@ -105,27 +105,3 @@ body{
     
 
 }    
-@keyframes expand {
-    0% {
-        height: 12vh;
-    }
-    50%{
-        height: 12.75vh;
-    }
-    100% {
-        height: 13.5vh;
-    }
-    
-}
-@keyframes contract{
-    0% {
-        height: 13.5vh;
-    }
-    50%{
-        height: 12.75vh;
-    }
-    100% {
-        height: 12vh;
-
-    }
-}
