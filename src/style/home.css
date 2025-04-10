@@ -6,6 +6,8 @@
     /* grid-template-rows: auto repeat(3, 40vh); */
     gap: 1rem;
     animation: fadeIn 0.75s ease-in;
+    height: fit-content;
+    
 }
     .textWrap{
         grid-row: 1/2;
@@ -17,22 +19,29 @@
         margin: 3rem 0;
         border-radius: 25px;
         text-align: center;
+        padding:1rem;
     }
+        .bodyTitle{
+            font-family: "Charm-Bold";
+            color: rgb(112, 54, 206);
+            font-size: 3rem;
+            grid-row: 1/2;
+            grid-column: 2/3;
+            justify-self: start;
+            margin:0
+        }
         .saltedCarmel{
             grid-row: 1/6;
             grid-column: 1/2;
-            max-width: 40vw;
+            max-width: 35vw;
             padding: 2rem;
            
         }
-        .visitUs{
-            grid-row: 1/2;
-            grid-column: 2/3;
-            font-size: 3.2rem;
-            font-family: 'sigmar';
-            color: rgb(112, 54, 206);
-            justify-self: center;
-            margin-bottom: 0;
+        .about{
+            grid-row: 2/3;
+            font-size: 1.3rem;
+            align-self: start;
+            margin-top: 10vh;
         }
         .sloganBody{
             font-family: 'sigmar';
@@ -46,14 +55,7 @@
             justify-self: start;
             align-self: center;
         }
-        .bodyTitle{
-            font-family: "Charm-Bold";
-            color: rgb(112, 54, 206);
-            font-size: 3rem;
-            grid-row: 2/3;
-            grid-column: 2/3;
-            justify-self: start;
-        }
+      
       
             
     #imgContainer{

@@ -3,11 +3,23 @@
 }
 body{
     background-color: white;
+    max-width: 100vw;
+ 
+}
+
+.goodsTitle{
+    grid-row: 2/3;
+    grid-column: 1/3;
+    text-align: center;
+    align-self: center;
+    font-family: 'Sigmar';
+    font-size: 2.5rem;
 }
 .menuContainer{
-    grid-column: 1/4;
+    grid-column: 1/2;
+    grid-row:3/4;
     width: 50vw;
-    height: 85vh;
+    /* height: 85vh; */
     justify-self: end;
     margin-right: 10vw;
     padding:3rem;
@@ -18,26 +30,9 @@ body{
 
     animation: fadeIn 0.75s ease-in;
     border-radius: 25px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
 }
-    .title{
-        align-self: center;
-        font-family: 'Roboto';
+    img{
+        max-width: 40vw;
     }
-    .bakeryMenu{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        min-height: 70vh;
-    }
-        .bakeryItem{
-            display: flex;
-            justify-content: space-between;
-            border-bottom: 1px dashed black;
-        }
-        #product{
-
-        }
-        #price{
-            margin-left: 10rem;
-            align-self: start;
-        }
